@@ -31,4 +31,30 @@ print(minha_lista)
 
 ultimo_elemento = minha_lista.pop()
 print(ultimo_elemento)
-print(minha_lista)        
+print(minha_lista)
+
+
+while True:
+    escolha = input("Digite a escolha (1/2/3/4): ")
+
+    if escolha in ('1', '2', '3', '4'):
+        num1 = float(input("Digite o primeiro número: "))
+        num2 = float(input("Digite o segundo número: "))
+
+        if escolha == '1':
+            print(f"{num1} + {num2} = {adicionar(num1, num2)}")
+
+        elif escolha == '2':
+            print(f"{num1} - {num2} = {subtrair(num1, num2)}")
+
+        elif escolha == '3':
+            print(f"{num1} * {num2} = {multiplicar(num1, num2)}")
+
+        elif escolha == '4':
+            print(f"{num1} / {num2} = {dividir(num1, num2)}")
+
+        proxima_calculacao = input("Deseja fazer outra operação? (sim/não): ")
+        if proxima_calculacao.lower() != 'sim':
+            break
+    else:
+        print("Entradainválida")
