@@ -1,6 +1,0 @@
-# trabalho-de-AI
-#Calculadora
-
-
-
-        
