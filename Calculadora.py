@@ -17,4 +17,18 @@ def dividir(x, y):
     if y != 0:
         return x / y
     else:
-        return "Erro! Divisão por zero."
+        return "Erro! Divisão por zero."  
+        
+print("Selecione a operação:")
+print("1. Adição")
+print("2. Subtração")
+print("3. Multiplicação")
+print("4. Divisão")
+
+#criando uma lista
+minha_lista = [1,2,3,4 ]
+print(minha_lista)
+
+ultimo_elemento = minha_lista.pop()
+print(ultimo_elemento)
+print(minha_lista)        
